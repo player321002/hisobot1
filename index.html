@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>265-maktab hisoboti</title>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f8faff;--card:#fff;--panel:#f1f4f9;--ink:#16304f;--mut:#64748b;--track:#eef2f7;--line:#cbd5e1}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f172a;--card:#1e293b;--panel:#1a2437;--ink:#e2e8f0;--mut:#94a3b8;--track:#334155;--line:#475569}}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--ink);font-family:Calibri,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.page{display:none}.page.on{display:block}
+.card{background:var(--card);border-radius:32px;padding:24px;box-shadow:0 6px 18px rgba(22,48,79,.12)}
+.panel{background:var(--panel);border-radius:32px;padding:28px;box-shadow:0 6px 18px rgba(22,48,79,.12)}
+.h{font-weight:800;letter-spacing:.2px;margin-bottom:14px}
+.mut{color:var(--mut)}
+.row{display:grid;grid-template-columns:96px 1fr 44px;align-items:center;gap:10px;margin:9px 0;font-size:.85rem;font-weight:600}
+.row.w{grid-template-columns:80px 1fr 56px}
+.trk{background:var(--track);height:12px;border-radius:99px;overflow:hidden}
+.bar{height:100%;border-radius:99px;box-shadow:0 2px 3px rgba(0,0,0,.2)}
+.big{font-size:2.4rem;font-weight:800;line-height:1}
+.tab{background:rgba(255,255,255,.15);color:#fff}.tab.act{background:#fff;color:#16304f}
+.sm{font-size:.75rem}
+</style>
+</head>
+<body>
+<header style="background:#16304f" class="text-white">
+  <div class="max-w-6xl mx-auto px-5 py-6 flex flex-wrap items-end justify-between gap-4">
+    <div>
+      <h1 class="text-2xl sm:text-4xl font-extrabold">265-MAKTAB | 2026-YIL HISOBOTI</h1>
+      <p class="mt-2 text-sm opacity-90">Davomat &nbsp;•&nbsp; Pullik ta’lim xizmatlari &nbsp;•&nbsp; Bitiruvchilar bandligi &nbsp;•&nbsp; Natijalar</p>
+    </div>
+    <nav class="flex gap-2">
+      <button data-p="hisobot" class="tab px-4 py-2 rounded-xl text-sm font-semibold">1. Hisobot</button>
+      <button data-p="natijalar" class="tab px-4 py-2 rounded-xl text-sm font-semibold">2. Natijalar</button>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-7">
+
+<section id="hisobot" class="page">
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="card">
+      <h2 class="h text-lg">DAVOMAT | 2026–2027</h2>
+      <p class="mut font-semibold mb-5">Jami o‘quvchi: 1 874 nafar</p>
+      <div id="dav"></div>
+      <p class="font-bold mt-5" style="color:#139a85">O‘sish: +2 foiz band</p>
+    </div>
+    <div class="card">
+      <h2 class="h text-lg">PULLIK TA’LIM XIZMATLARI</h2>
+      <div class="flex gap-8 mb-5">
+        <div><p class="big" style="color:#2b6fc2">10 ta</p><p class="mut sm mt-1">sinf</p></div>
+        <div><p class="big" style="color:#139a85">245 nafar</p><p class="mut sm mt-1">o‘quvchi</p></div>
+      </div>
+      <p class="mut font-bold text-sm">Oylik tushum (mln so‘m)</p>
+      <div id="tush"></div>
+      <p class="font-bold mt-4 text-sm" style="color:#139a85">O‘sish: +7,97 mln so‘m (+6,45%)</p>
+      <p class="mut sm mt-2">Asos: VM 2019-yil 22-aprel, 343-son va 243-son qarorlari</p>
+    </div>
+    <div class="card">
+      <h2 class="h text-lg">BITIRUVCHILAR | 2025–2026</h2>
+      <p class="mb-1"><span class="big" style="color:#2b6fc2">157</span> <span class="mut font-bold ml-3">bitiruvchi</span></p>
+      <p class="font-bold mb-3" style="color:#139a85">OTMga kirgan: 114 nafar (72,6%)</p>
+      <div id="bit"></div>
+      <p class="mut sm mt-2">OTM: davlat 35 · nodavlat 75 · chet el 4</p>
+    </div>
+  </div>
+
+  <div class="card mt-6">
+    <h2 class="h text-lg">MALAKA OSHIRISH</h2>
+    <p class="mb-2 text-sm">86 nafar o‘qituvchidan 24 nafari (27,9%) malaka oshirishga borgan.</p>
+    <div class="trk" style="height:18px"><div class="bar" style="width:27.9%;background:#6d5bd0"></div></div>
+  </div>
+
+  <div class="panel mt-6 grid md:grid-cols-2 gap-8">
+    <div>
+      <h2 class="h text-xl">ASOSIY XULOSA</h2>
+      <ul class="list-disc pl-5 space-y-1.5">
+        <li>Davomat sentabrdagi 90% dan oktabrda 92% ga ko‘tarilgan. Bu maktabda o‘quvchilar davomatini yaxshilash borasida ijobiy natijalar borligini ko‘rsatadi.</li>
+        <li>Pullik sinflarda 245 nafar o‘quvchi ta’lim olmoqda, oktabr tushumi sentabrga nisbatan 6,45% ga oshgan.</li>
+        <li>OTMga kirgan bitiruvchilar ulushi 72,6%.</li>
+      </ul>
+    </div>
+    <div style="border-left:1px solid var(--line)" class="md:pl-8">
+      <h2 class="h text-xl" style="color:#c0444f">ANIQLASHTIRISH KERAK</h2>
+      <ul class="list-disc pl-5 space-y-1.5">
+        <li>Bitiruvchilar bo‘yicha 157 nafardan 153 nafari taqsimlangan; 4 nafar holatini aniqlashtiring.</li>
+        <li>Bandligi ta’minlanmagan 3 nafar o‘quvchi bo‘yicha sinf rahbarlari MFYdan dalolatnoma olgan: ular ota-onasi qaramog‘ida.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="natijalar" class="page">
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="card">
+      <h2 class="h text-lg">OLIMPIADA | TURLAR</h2>
+      <div class="flex gap-8 mb-4">
+        <div><p class="big" style="color:#2b6fc2">18</p><p class="mut sm mt-1">1-tur</p></div>
+        <div><p class="big" style="color:#139a85">30</p><p class="mut sm mt-1">2-tur</p></div>
+      </div>
+      <div id="tur"></div>
+      <p class="mut font-bold text-sm mt-5">70% ustama: <span style="color:#6d5bd0">6 ta</span></p>
+      <div id="ust"></div>
+    </div>
+    <div class="card">
+      <h2 class="h text-lg">OLIMPIADA NATIJALARI</h2>
+      <p class="mb-1"><span class="big" style="color:#2b6fc2">68,5%</span> <span class="mut font-bold ml-3">maktab</span></p>
+      <p class="font-bold mb-4" style="color:#139a85">Eng yuqori: Ingliz tili 80,9%</p>
+      <div id="nat"></div>
+      <p class="font-bold mt-3 text-sm" style="color:#c0444f">Eng past: Tarix 59,8%</p>
+    </div>
+    <div class="card">
+      <h2 class="h text-lg">MARKAZLASHGAN ChSB</h2>
+      <p class="mut font-bold text-sm mb-1">Matematika (o‘rtacha ball)</p>
+      <div id="mat"></div>
+      <p class="font-bold mt-3 text-sm" style="color:#139a85">Eng yuqori: 10-sinf, 28,8</p>
+    </div>
+  </div>
+
+  <div class="card mt-6">
+    <h2 class="h text-lg">MARKAZLASHGAN ChSB | BOSHQA FANLAR</h2>
+    <div id="fan" class="grid md:grid-cols-2 md:gap-x-12"></div>
+  </div>
+
+  <div class="panel mt-6 grid md:grid-cols-2 gap-8">
+    <div>
+      <h2 class="h text-xl">ASOSIY XULOSA</h2>
+      <ul class="list-disc pl-5 space-y-1.5">
+        <li>Olimpiadada 2-turga 30 nafar chiqqan, 1-turda 18 nafar.</li>
+        <li>Maktabning olimpiada o‘rtachasi 68,5%: eng yuqori natija ingliz tilida (80,9%), eng past tarixda (59,8%).</li>
+        <li>ChSB: matematikada eng yuqori ball 10-sinfda (28,8), eng past 7-sinfda (21,3); boshqa fanlarda kimyo 29,6 bilan oldinda.</li>
+      </ul>
+    </div>
+    <div style="border-left:1px solid var(--line)" class="md:pl-8">
+      <h2 class="h text-xl" style="color:#c0444f">ANIQLASHTIRISH KERAK</h2>
+      <ul class="list-disc pl-5 space-y-1.5">
+        <li>Ona tili bo‘yicha uchta ball (23,1 · 25,8 · 21,9) qaysi sinflarga tegishli ekanini yozing.</li>
+        <li>Rasmdagi 172, 141, 153, 163, 150, 126, 151 raqamlari nimani bildirishini tasdiqlang.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+<p class="text-center sm mut pb-6">265-MAKTAB | MA’LUMOTLAR TAQDIMOTI</p>
+
+<script>
+function bars(id,rows,max,wide){
+  document.getElementById(id).innerHTML=rows.map(r=>`<div class="row ${wide?'w':''}"><span>${r[0]}</span><div class="trk"><div class="bar" style="width:${Math.max(r[1]/max*100,2.5)}%;background:${r[3]}"></div></div><span style="color:${r[3]};text-align:right">${r[2]}</span></div>`).join('');
+}
+bars('dav',[['Sentabr',90,'90%','#2b6fc2'],['Oktabr',92,'92%','#139a85']],100,true);
+bars('tush',[['Sentabr',123.645,'123,6','#2b6fc2'],['Oktabr',131.618,'131,6','#139a85']],131.618,true);
+bars('bit',[['OTM',114,114,'#2b6fc2'],['Texnikum',7,7,'#e8a317'],['Ish',24,24,'#139a85'],['O‘zini band',5,5,'#6d5bd0'],['Band emas',3,3,'#c0444f'],['Aniqlashtirish',4,4,'#64748b']],157);
+bars('tur',[['1-tur',18,18,'#2b6fc2'],['2-tur',30,30,'#139a85']],30);
+bars('ust',[['Ingliz tili',4,4,'#6d5bd0'],['Tarix',1,1,'#e8a317'],['Boshlang‘ich',1,1,'#64748b']],4);
+bars('nat',[['Ingliz tili',80.9,'80,9%','#139a85'],['Maktab',68.5,'68,5%','#2b6fc2'],['Tarix',59.8,'59,8%','#c0444f']],100,true);
+bars('mat',[['5-sinf',21.9,'21,9','#2b6fc2'],['6-sinf',24.6,'24,6','#2b6fc2'],['7-sinf',21.3,'21,3','#c0444f'],['8-sinf',24.3,'24,3','#2b6fc2'],['9-sinf',24.9,'24,9','#2b6fc2'],['10-sinf',28.8,'28,8','#139a85'],['11-sinf',24,'24','#2b6fc2']],30,true);
+bars('fan',[['Ona tili I',23.1,'23,1','#2b6fc2'],['Ona tili II',25.8,'25,8','#2b6fc2'],['Ona tili III',21.9,'21,9','#2b6fc2'],['Fizika',23.9,'23,9','#e8a317'],['Biologiya',26.5,'26,5','#139a85'],['Kimyo',29.6,'29,6','#139a85'],['Ingliz tili',22.3,'22,3','#6d5bd0']],30);
+function show(id){
+  if(id!=='natijalar')id='hisobot';
+  document.querySelectorAll('.page').forEach(p=>p.classList.toggle('on',p.id===id));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('act',t.dataset.p===id));
+}
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{location.hash=t.dataset.p});
+addEventListener('hashchange',()=>show(location.hash.slice(1)));
+show(location.hash.slice(1));
+</script>
+</body>
+</html>
